@@ -19,8 +19,8 @@ export class CadastroComponent {
   ngOnInit(): void {}
 
   inserirConta(): void {
-    this.contaService.inserir(this.conta);
-    //.subscribe((conta) => console.log(conta));
+    this.contaService.inserir(this.conta)
+    .subscribe((conta) => console.log(conta));
 
     this.conta = new Conta();
   }

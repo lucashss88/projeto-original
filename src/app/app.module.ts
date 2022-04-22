@@ -12,6 +12,7 @@ import { MatButtonModule } from '@angular/material/button';
 //import { MenuComponent } from './layout/menu/menu.component';
 import { LayoutModule } from './layout/layout.module';
 import { ContaModule } from './conta/conta.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [AppComponent],
@@ -26,7 +27,8 @@ import { ContaModule } from './conta/conta.module';
     MatInputModule,
     MatFormFieldModule,
     MatIconModule,
-    ContaModule
+    ContaModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
